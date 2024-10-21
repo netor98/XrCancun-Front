@@ -1,0 +1,59 @@
+<!--
+<p-image
+  src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+  alt="Image"
+  width="250"
+  class="text-white"
+  [preview]="true" />
+-->
+<section style="background: #343531"
+          class="py-20">
+
+
+  <p-splitter
+  [style]="{ height: '300px' }"
+  [panelSizes]="[10, 80]"
+  styleClass="mb-5">
+  <ng-template pTemplate>
+
+    <p-image
+      src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+      alt="Image"
+      class="text-white"
+      [preview]="true" />
+
+  </ng-template>
+  <ng-template pTemplate>
+    <p-splitter layout="vertical" [panelSizes]="[15, 35]">
+      <ng-template pTemplate>
+
+        <p-image
+          src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+          alt="Image"
+          class="text-white"
+          [preview]="true" />
+      </ng-template>
+      <ng-template pTemplate>
+        <p-splitter [panelSizes]="[20, 80]">
+          <ng-template pTemplate>
+
+            <p-image
+              src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+              alt="Image"
+              class="text-white"
+              [preview]="true" />
+          </ng-template>
+          <ng-template pTemplate>
+
+            <p-image
+              src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+              alt="Image"
+              class="text-white"
+              [preview]="true" />
+          </ng-template>
+        </p-splitter>
+      </ng-template>
+    </p-splitter>
+  </ng-template>
+  </p-splitter>
+</section>
