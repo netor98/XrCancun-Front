@@ -7,10 +7,92 @@
   [preview]="true" />
 -->
 <section style="background: #343531"
-          class="py-20">
+          class="py-20 text-white" >
+  <div
+       class="transition-opacity duration-700 pl-2
+       transform w-full md:w-2/5" scrollReveal>
+    <h3 id="About" class="underline text-sm
+                   underline-offset-4 md:mt-3 scroll-mt-40">Gallery</h3>
 
+    <h2 class="text-2xl text-emerald-300 mt-3">
+      Explore Our Gallery
+    </h2>
+  </div>
 
-  <p-splitter
+  <div
+    class="mx-auto
+    grid grid-cols-1 md:grid-cols-2
+    lg:grid-cols-3 gap-4 w-full sm:w-2/3 md:mt-10">
+    <!-- Column #1 -->
+    <div class="grid gap-4">
+      <div>
+        <p-image class="rounded-xl shadow"
+                 src="/assets/test.jpg"  alt="Image 01"
+                  [preview]="true"
+        />
+      </div>
+      <div>
+        <p-image
+          class="w-full rounded-xl shadow"
+          [preview]="true"
+          src="/assets/sub-hero.jpg"  alt="Image 02" />
+      </div>
+      <div>
+        <p-image
+          class="w-full rounded-xl shadow"
+          [preview]="true"
+          src="/assets/hero.jpg"   alt="Image 03" />
+      </div>
+    </div>
+    <!-- Column #2 -->
+
+    <div class="grid gap-4">
+      <div>
+        <p-image
+          class="w-full rounded-xl shadow"
+          [preview]="true"
+          src="/assets/sub-hero.jpg"  alt="Image 01" />
+      </div>
+      <div>
+        <p-image
+          class="w-full rounded-xl shadow"
+          [preview]="true"
+          src="/assets/hero.jpg"  alt="Image 02" />
+
+      </div>
+      <div>
+        <p-image
+          class="w-full rounded-xl shadow"
+          [preview]="true"
+          src="/assets/test.jpg"  alt="Image 03" />
+      </div>
+    </div>
+
+    <!-- Column #3 -->
+
+    <div class="grid gap-4">
+      <div>
+        <p-image
+          class="w-full rounded-xl shadow"
+          [preview]="true"
+          src="/assets/hero.jpg"  alt="Image 01" />
+      </div>
+      <div>
+        <p-image
+          class="w-full rounded-xl shadow"
+          [preview]="true"
+          src="/assets/test.jpg"  alt="Image 02" />
+      </div>
+      <div>
+        <p-image
+          class="w-full rounded-xl shadow"
+          [preview]="true"
+          src="/assets/sub-hero.jpg"   alt="Image 03" />
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- <p-splitter
   [style]="{ height: '300px' }"
   [panelSizes]="[10, 80]"
   styleClass="mb-5">
@@ -55,5 +137,4 @@
       </ng-template>
     </p-splitter>
   </ng-template>
-  </p-splitter>
-</section>
+  </p-splitter>-->

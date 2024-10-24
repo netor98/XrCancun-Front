@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './gallery.component.css'
 })
 export class GalleryComponent {
-
+  images =
+    [
+      'https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg',
+      'https://primefaces.org/cdn/primeng/images/galleria/galleria11.jpg',
+      'https://primefaces.org/cdn/primeng/images/galleria/galleria12.jpg'
+    ];
 }
