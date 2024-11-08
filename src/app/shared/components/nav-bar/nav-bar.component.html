@@ -1,0 +1,158 @@
+<header
+  class="pb-0 fixed top-0 left-0 w-full z-10
+  bg-white bg-opacity-20 font-roboto text-gray-500"
+  [ngClass]="{'text-gray-500': isScrolled, 'text-white': !isScrolled}"
+>
+  <div class="px-4 mx-auto max-w-screen-sm md:max-w-6xl sm:px-6 lg:px-8">
+    <!-- Navigation bar -->
+    <nav class="flex items-center justify-between h-16 lg:h-20">
+
+      <div class="flex-shrink-0 items-center">
+        <a href="#" title=""
+           class="flex transition-all items-center
+           duration-500 ease-in-out hover:text-white">
+          <img [src]="isScrolled ? 'assets/logo-black.png' : 'assets/logo.png'"
+               class="lg:w-24 lg:h-24 w-10 h-10"
+          />
+          <h1 class="text-3xl italic font-semibold ">XrCancún</h1>
+        </a>
+      </div>
+
+      <!-- Hamburger Button for mobile -->
+
+      <div class="flex items-center lg:hidden space-x-4">
+
+        <app-change-language class="lg:hidden"></app-change-language>
+        <button type="button"
+                class="inline-flex p-2 transition-all duration-200 rounded-md
+              lg:hidden focus:bg-gray-100 hover:bg-gray-100"
+                (click)="toggleMenu()">
+
+          <!-- Hamburger Icon -->
+          <svg *ngIf="!menuOpen" class="block w-6 h-6"
+               xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+
+          <!-- Close Icon -->
+          <svg *ngIf="menuOpen"
+               class="block w-6 h-6 z-50" xmlns="http://www.w3.org/2000/svg"
+               fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Full-screen navigation for large screens -->
+      <div class="hidden pl-20 lg:flex text-md lg:items-center mx-auto
+            lg:space-x-10">
+        <a href="#"
+           class="group transition-all hover:text-white
+           duration-500 ease-in-out">
+          <span
+            class="bg-left-bottom bg-gradient-to-r from-white to-white
+            bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_2px]
+            transition-all duration-500 py-1 ease-out">
+            {{ 'header.home' | translate }}
+          </span>
+        </a>
+        <a href="#About"
+           class="group transition-all hover:text-white
+           duration-500 ease-in-out">
+          <span
+            class="bg-left-bottom bg-gradient-to-r from-white to-white
+            bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_2px]
+            transition-all duration-500 py-1 ease-out">
+            {{ 'header.about' | translate }}
+          </span>
+        </a>
+        <a href="#Gallery"
+           class="group transition-all duration-500
+           hover:text-white ease-in-out">
+          <span
+            class="bg-left-bottom bg-gradient-to-r from-white to-white
+            bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_2px]
+            transition-all duration-500 py-1 ease-out">
+            {{ 'header.gallery' | translate }}
+          </span>
+        </a>
+        <a href="#Services"
+           class="group transition-all hover:text-white
+           duration-500 ease-in-out">
+          <span
+            class="bg-left-bottom bg-gradient-to-r from-white to-white
+            bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_2px]
+            transition-all duration-500 py-1 ease-out">
+            {{ 'header.services' | translate }}
+          </span>
+        </a>
+      </div>
+      <div class="lg:flex items-center space-x-4 hidden">
+
+        <a href="#Services" class="group bg-white relative font-semibold
+                inline-flex items-center overflow-hidden
+                rounded-full px-10 py-2 pointer
+                text-fuchsia-800 hover:text-white">
+          <span class="duration-400 ease absolute left-0 top-1/2 block h-0
+                w-full bg-fuchsia-800 opacity-100 transition-all
+                group-hover:top-0 group-hover:h-full"></span>
+          <span class="ease absolute right-0 flex h-5 w-10 translate-x-full
+                transform items-center justify-start duration-500
+                group-hover:-translate-x-2">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+          <span class="relative transform
+              duration-700 group-hover:-translate-x-3">
+            {{ 'header.booking' | translate }}
+          </span>
+        </a>
+        <app-change-language></app-change-language>
+      </div>
+
+    </nav>
+
+    <!-- Full-screen overlay for mobile menu -->
+    <div
+      class="fixed inset-0 bg-black bg-opacity-80 z-20 lg:hidden
+         transition-all duration-500 ease-in-out"
+      [ngClass]="menuOpen ? 'translate-x-0' : '-translate-x-full'" >
+      <nav class="flex flex-col items-center justify-center h-full space-y-6" (click)="toggleMenu()">
+        <a href="#" class="text-white text-2xl">
+          {{ 'header.home' | translate }}
+        </a>
+        <a href="#About" class="text-white text-2xl">
+          {{ 'header.about' | translate }}
+        </a>
+        <a href="#Gallery" class="text-white text-2xl">
+          {{ 'header.gallery' | translate }}
+        </a>
+        <a href="#" class="text-white text-2xl">
+          {{ 'header.services' | translate }}
+        </a>
+        <button
+          class="bg-fuchsia-800 text-white
+          rounded-full px-10 py-2 text-2xl">
+          {{ 'header.booking' | translate }}
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

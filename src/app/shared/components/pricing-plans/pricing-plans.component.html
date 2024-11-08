@@ -1,0 +1,82 @@
+<section style="background: #1c1a1f"
+         class="py-20 text-white md:pl-8 md:pr-8" >
+  <div scrollReveal
+       class="transition-opacity duration-700
+       transform w-full md:w-2/5">
+    <h3 id="Services" class="underline text-sm
+                   underline-offset-4 md:mt-3 scroll-mt-40">{{'services.subtitle' | translate }}</h3>
+    <h2 class="text-2xl text-emerald-300 mt-3 font-bold">
+      {{ 'services.title' | translate }}
+      <span class="text-white">{{'services.subtitle' | translate }}</span>
+    </h2>
+  </div>
+
+  <div  class="flex flex-col md:flex-row gap-4
+  justify-center items-center">
+    <!-- Simple Plan -->
+    <div
+      class="w-full md:w-1/3 bg-emerald-400 flex flex-col justify-between
+      p-3 rounded-lg text-center text-black">
+      <h2 class="text-2xl font-bold">Service #1</h2>
+      <p class="text-5xl font-bold mt-4">$$$</p>
+      <p class="text-lg text-gray-700">Free plan for all users.</p>
+      <ul class="mt-6 space-y-3">
+        <li>✔️ Store up to 20 businesses</li>
+        <li>✔️ 2 collaborators</li>
+        <li>✔️ Unlimited collaboration</li>
+        <li>✔️ End-to-end encryption</li>
+        <li>✔️ Mac, PC, Android, iOS, and Browser</li>
+      </ul>
+
+      <a routerLink="booking"
+         class="mt-8 bg-black text-white px-6 block
+        hover:bg-gray-600 transition-colors duration-300
+        py-2 rounded-lg font-semibold">Get Service</a>
+    </div>
+
+    <!-- Efficient Plan -->
+    <div
+      class="w-full md:w-1/3 min-h-[500px]
+      p-3 rounded-lg text-center flex flex-col justify-between"
+         style="background-color: #224929 "
+    >
+      <h2 class="text-2xl font-bold ">Service #2</h2>
+      <p class="text-5xl font-bold mt-4">$$$</p>
+      <p class="text-lg">Ideal for individual creators.</p>
+      <ul class="mt-6 space-y-3 ">
+        <li>✔️Everything in Simple</li>
+        <li>✔️ 512GB of business storage</li>
+        <li>✔️ Unlimited management</li>
+        <li>✔️ Unlimited collaborators</li>
+        <li>✔️ Links with password protection</li>
+      </ul>
+
+      <a routerLink="booking"
+         class="mt-8 bg-white text-black px-6 block
+        hover:bg-gray-600 transition-colors duration-300
+        py-2 rounded-lg font-semibold">Get Service</a>
+    </div>
+
+    <!-- Team Plan -->
+    <div
+      class="w-full md:w-1/3 bg-emerald-400 flex flex-col justify-between
+      p-3 rounded-lg text-center text-black">
+      <h2 class="text-2xl font-bold">Service #3</h2>
+      <p class="text-5xl font-bold mt-4">$$$</p>
+      <p class="text-lg text-gray-700">Small teams with up to 10 users.</p>
+      <ul class="mt-6 space-y-3">
+        <li>✔️ Everything in Efficient</li>
+        <li>✔️ Unlimited team members</li>
+        <li>✔️ Custom storage plans</li>
+        <li>✔️ White label branding</li>
+        <li>✔️ 2 collaborators</li>
+      </ul>
+      <a routerLink="booking"
+        class="mt-8 bg-black text-white px-6 block
+        hover:bg-gray-600 transition-colors duration-300
+        py-2 rounded-lg font-semibold">Get Service</a>
+    </div>
+  </div>
+
+</section>
+<!-- Text Section -->

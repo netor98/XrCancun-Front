@@ -1,0 +1,66 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "gallery": "Galería",
+    "contact": "Contacto",
+    "services": "Servicios",
+    "booking": "Reservar"
+  },
+  "title": "¡Reserve Su Sesión De Fotografía Hoy!",
+  "subtitle":  "creemos que cada momento merece ser inmortalizado.Tanto si estás celebrando un hito, o simplemente quiere preservar los bellos momentos de la vida, estamos aquí para convertir su visión en impresionantes fotografías.",
+  "explore": "Explorar",
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Conserve sus recuerdos para toda la vida con nuestra fotografía profesional.",
+    "content": "Somos una empresa con amplia experiencia en el servicio fotográfico, con la misión de capturar imágenes inéditas de los momentos y eventos especiales de nuestros clientes"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Echa un vistazo a nuestra galería de fotos para ver ejemplos de nuestro ",
+    "work": "trabajo."
+  },
+
+  "footer": {
+    "title": "Caputura Momentos",
+    "subtitle": "Creando recuerdos inolvidables.",
+    "copy": "Preservando momentos inolvidables.",
+    "contact": "Contáctanos",
+    "content": "CAPTURANDO SUS PRECIOSOS MOMENTOS CON UN TOQUE DE CREATIVIDAD Y PASIÓN."
+  },
+  "services": {
+    "weddingPhotography": "Fotografía de Bodas",
+    "familyPortraits": "Retratos Familiares",
+    "eventPhotography": "Fotografía de Eventos",
+    "photoEditing": "Edición de Fotos",
+    "photographyPackages": "Paquetes de Fotografía",
+    "corporateShoots": "Sesiones Corporativas",
+    "bookNow": "Reservar Ahora",
+    "about": "Sobre Nosotros",
+    "portfolio": "Portafolio",
+    "blog": "Blog",
+    "faqs": "Preguntas Frecuentes",
+    "title": "Explora Nuestros",
+    "subtitle": "Servicios"
+  },
+  "Faqs": {
+    "title": "Preguntas",
+    "subtitle": "Frecuentes"
+  },
+  "booking": {
+    "title": "Reserve Su Sesión De Fotografía",
+    "subtitle": "Complete el formulario a continuación para reservar su sesión de fotografía.",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "date": "Fecha",
+    "time": "Hora",
+    "message": "Mensaje",
+    "submit": "Enviar por WhatsApp"
+  },
+  "carousel": {
+    "link": "Volver al sitio web ->",
+    "message1": "Capturando Recuerdos",
+    "message2": "Creando Momentos Inolvidables"
+  }
+}

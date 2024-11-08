@@ -1,0 +1,29 @@
+<div class=" ">
+  <div
+    class="bg-gray-800 rounded-lg p-6 shadow-lg
+    text-center lg:text-left">
+    <div class="flex justify-between items-center">
+      <a routerLink=""
+         class="text-sm text-emerald-400 rounded-xl bg-opacity-10 p-1
+           bg-gray-200 px-3 my-4
+           hover:underline block lg:inline">
+        {{ 'carousel.link' | translate }}
+      </a>
+    </div>
+
+    <p-carousel [value]="items" [numVisible]="1"
+                [numScroll]="1" [circular]="true" [autoplayInterval]="3500">
+      <ng-template pTemplate="item" let-item>
+        <img [src]="item.image" loading="lazy"
+             class="w-full object-cover"
+             alt="{{ item.title }}" (load)="onImageLoad()"/>
+      </ng-template>
+    </p-carousel>
+
+    <p class="mt-6 text-lg lg:text-xl font-semibold">
+      {{'carousel.message1' | translate}},
+      <br>
+      {{'carousel.message2' | translate}}
+    </p>
+  </div>
+</div>

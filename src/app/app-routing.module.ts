@@ -1,24 +1,26 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {HomeComponent} from "./landing-page/home/home.component";
+import {HomeComponent} from "./landing-page/components/home/home.component";
+
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
-
   },
-
+/*
   {
-    path: 'login',
+    path: 'auth',
     loadChildren: () => import('./auth/auth.module')
       .then(m => m.AuthModule)
   },
+*/
   {
-    path: 'user',
+    path: 'booking',
     loadChildren: () => import('./user/user.module')
       .then(m => m.UserModule)
   },
+/*
   {
     path: 'photographer',
     loadChildren: () => import('./photographer/photographer.module')
@@ -29,6 +31,11 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin.module')
       .then(m => m.AdminModule)
   },
+*/
+  {
+    path: '**',
+    redirectTo: ''
+  }
 
 ];
 

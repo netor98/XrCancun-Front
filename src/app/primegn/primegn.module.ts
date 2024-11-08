@@ -9,8 +9,12 @@ import {CarouselModule} from "primeng/carousel";
 import {GalleriaModule} from "primeng/galleria";
 import {DialogModule} from "primeng/dialog";
 import {FieldsetModule} from "primeng/fieldset";
-import {BrowserModule} from "@angular/platform-browser";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {AccordionModule} from "primeng/accordion";
+import {OverlayModule} from "primeng/overlay";
+import {OverlayPanelModule} from "primeng/overlaypanel";
+import {InputTextModule} from "primeng/inputtext";
+import {FloatLabelModule} from "primeng/floatlabel";
+import {InputTextareaModule} from "primeng/inputtextarea";
 
 
 @NgModule({
@@ -21,8 +25,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   ],
   exports: [
     ButtonModule,
-    BrowserModule,
-    BrowserAnimationsModule,
     CalendarModule,
     MenubarModule,
     SelectButtonModule,
@@ -31,7 +33,12 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     SplitterModule,
     CarouselModule,
     DialogModule,
-    FieldsetModule
+    FieldsetModule,
+    AccordionModule,
+    OverlayPanelModule,
+    InputTextModule,
+    FloatLabelModule,
+    InputTextareaModule
   ]
 })
 export class PrimegnModule { }

@@ -1,14 +1,17 @@
+@import 'swiper/swiper-bundle.css';
+
 @tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("/assets/fonts/Roboto-Regular.ttf") format("woff");
-  }
+@layer tailwind-base, primeng, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
 }
 
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}

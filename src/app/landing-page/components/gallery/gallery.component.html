@@ -1,0 +1,48 @@
+
+
+<section style="background: #343531" class="py-20 text-white md:pl-8">
+  <div class="transition-opacity duration-700 transform w-full md:w-2/5" scrollReveal>
+    <h3 id="About" class="underline text-sm underline-offset-4 md:mt-3 scroll-mt-40">
+      {{ 'gallery.title' | translate }}
+    </h3>
+    <h2 class="text-2xl text-emerald-300 mt-3 font-bold">
+      {{ 'gallery.subtitle' | translate }}
+      <span class="text-white">{{ 'gallery.work' | translate }}</span>
+    </h2>
+  </div>
+
+
+  <swiper-container slides-per-view="1"
+    class="mySwiper mt-8" pagination="true" grab-cursor="true" centered-slides="true"
+                    slides-per-view="auto"
+                    coverflow-effect-rotate="50"
+                    coverflow-effect-stretch="0"
+                    coverflow-effect-depth="100"
+                    coverflow-effect-modifier="1"
+                    coverflow-effect-slide-shadow="false">
+
+    <swiper-slide *ngFor="let image of images">
+      <div class="flex justify-center">
+        <img
+          [src]="image.src"
+          [alt]="image.alt"
+          loading="lazy"
+          class="rounded-lg  max-w-md w-full object-cover cursor-pointer"
+          (click)="openModal(image.src)"
+        />
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <div *ngIf="selectedImage" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+    <div class="relative">
+      <button (click)="closeModal()" class="absolute top-4 right-4 text-white text-xl font-bold">✖</button>
+      <img [src]="selectedImage" alt="Image" class="max-w-full max-h-screen object-contain rounded-lg" />
+    </div>
+  </div>
+
+
+
+</section>
+
+

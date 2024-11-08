@@ -1,0 +1,67 @@
+<footer class="text-white py-10 px-6" style="background: #1c1a1f;">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+    <!-- Left Section -->
+    <div class="col-span-1 md:col-span-2">
+      <h2 class="text-2xl font-bold m-0">
+        {{ 'footer.title' | translate }},
+      </h2>
+      <h2 class="text-xl">
+        {{ 'footer.subtitle' | translate }}
+      </h2>
+      <div class="flex items-center my-4">
+        <img src="./assets/logo.png" alt="Photography logo" class="h-20 mr-2">
+        <p class="text-sm">XrCancun™</p>
+      </div>
+      <p class="text-sm mt-2">&copy; 2024 </p>
+      <p class="text-sm mt-2">{{'footer.copy' | translate}}</p>
+    </div>
+
+    <!-- Center Section -->
+    <div class="col-span-1">
+      <ul class="space-y-2">
+        <li><a href="#" class="text-sm hover:underline">{{ 'services.weddingPhotography' | translate }}</a></li>
+        <li><a href="#" class="text-sm hover:underline">{{ 'services.familyPortraits' | translate }}</a></li>
+        <li><a href="#" class="text-sm hover:underline">{{ 'services.eventPhotography' | translate }}</a></li>
+      </ul>
+    </div>
+
+    <div class="col-span-1">
+      <ul class="space-y-2">
+        <li>
+          <a href="#" class="text-sm hover:underline">{{ 'services.photoEditing' | translate }}</a>
+        </li>
+        <li>
+          <a href="#Services" class="text-sm hover:underline">{{ 'services.photographyPackages' | translate }}</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm hover:underline">{{ 'services.corporateShoots' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Section -->
+  </div>
+
+  <div class="col-span-1 mt-2 flex justify-center md:justify-end md:w-full">
+    <button class="bg-white text-teal-800 font-semibold py-2 px-4 rounded-lg hover:bg-gray-300">
+      {{ 'footer.contact' | translate | uppercase }}
+    </button>
+  </div>
+  <!-- Bottom Section -->
+  <div
+    class="mt-10 border-t border-gray-400 pt-4 text-sm flex
+    flex-col md:flex-row justify-between max-w-6xl mx-auto">
+    <div class="flex items-center space-x-4">
+      <a routerLink="booking" class="font-semibold">{{ 'services.bookNow' | translate }}</a>
+    </div>
+    <div class="flex justify-center md:justify-start space-x-8 mt-4 md:mt-0">
+      <a href="#" class="hover:underline">{{ 'services.about' | translate }}</a>
+      <a href="#" class="hover:underline">{{ 'services.portfolio' | translate }}</a>
+      <a href="#" class="hover:underline">{{ 'services.blog' | translate }}</a>
+      <a href="#" class="hover:underline">{{ 'services.faqs' | translate }}</a>
+    </div>
+    <p class="text-gray-200 text-xs mt-4 md:mt-0 text-center md:text-right">
+      {{ 'footer.content' | translate}}
+    </p>
+  </div>
+</footer>

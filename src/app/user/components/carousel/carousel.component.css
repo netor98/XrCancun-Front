@@ -1,0 +1,21 @@
+.carousel-item {
+  text-align: center;
+}
+
+
+/* Customize the arrow buttons */
+::ng-deep .p-carousel-prev,
+::ng-deep .p-carousel-next {
+  display: none;
+}
+
+::ng-deep .p-carousel-prev:hover,
+::ng-deep .p-carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+/* Optional: Center the carousel with padding */
+::ng-deep .p-carousel-content {
+  padding: 0; /* Adjust padding to center vertically */
+}
+

@@ -1,7 +1,8 @@
 import {Directive, ElementRef, HostListener, Renderer2} from '@angular/core';
 
 @Directive({
-  selector: '[scrollReveal]'
+  selector: '[scrollReveal]',
+  standalone: true
 })
 export class ScrollRevealDirective {
 
@@ -37,7 +38,6 @@ export class ScrollRevealDirective {
       this.revealElement()
     } else {
       this.hideElement()
-      console.log("asd");
     }
   }
 

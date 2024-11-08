@@ -1,0 +1,160 @@
+
+<h2 class="text-2xl sm:text-3xl font-bold text-center">
+  {{ 'booking.title' | translate }}
+</h2>
+
+<p class="mb-5 text-gray-400 text-md text-center">
+  {{ 'booking.subtitle' | translate }}
+</p>
+<form class="space-y-6 max-w-md mx-auto">
+  <!-- Name Field -->
+  <div>
+    <p-floatLabel>
+      <input id="name" type="text" pInputText [(ngModel)]="name" name="name"
+             class="w-full p-3 rounded-md bg-gray-800 border border-gray-700 text-white
+                    focus:outline-none focus:ring focus:ring-emerald-400 text-sm sm:text-base">
+      <label for="name" class="block text-md font-medium text-gray-500">
+        {{ 'booking.name' | translate }}
+      </label>
+    </p-floatLabel>
+  </div>
+
+  <!-- Phone Field -->
+  <div>
+    <p-floatLabel>
+      <input id="phone" type="text" pInputText [(ngModel)]="phone" name="phone"
+             class="w-full p-3 rounded-md bg-gray-800 border border-gray-700 text-white
+                    focus:outline-none focus:ring focus:ring-emerald-400 text-sm sm:text-base">
+      <label for="phone" class="block text-md font-medium text-gray-500">
+        {{ 'booking.phone' | translate }}
+      </label>
+    </p-floatLabel>
+  </div>
+
+  <!-- Date Picker -->
+  <div>
+    <p-calendar id="fecha" [(ngModel)]="bookingDate" name="bookingDate"
+                dateFormat="dd/mm/yy" placeholder="{{ 'booking.date' | translate }}"
+                [minDate]="minDate" [showIcon]="true"
+                class="mt-1 w-full text-sm sm:text-base"></p-calendar>
+  </div>
+
+  <!-- Textarea -->
+  <div>
+    <p-floatLabel>
+      <textarea name="message" [(ngModel)]="message"
+        class="bg-gray-800 text-white w-full p-3 rounded-md border border-gray-700 text-sm sm:text-base"
+        id="float-input" [autoResize]="true"
+        rows="5" cols="60" pInputTextarea>
+      </textarea>
+      <label for="float-input" class="block text-md font-medium text-gray-500">
+        {{ 'booking.message' | translate }}
+      </label>
+    </p-floatLabel>
+  </div>
+
+  <button pButton type="button" label="{{ 'booking.submit' | translate}}" icon="pi pi-whatsapp"
+          (click)="sendWhatsApp()"
+          class="w-full bg-emerald-400 text-white font-semibold py-2 px-4
+          rounded-md hover:bg-emerald-600 transition focus:ring focus:ring-emerald-400">
+  </button>
+</form>
+
+
+<!--<form class="space-y-6">
+  <div class="">
+    <p-floatLabel>
+      <input id="name" type="text" pInputText [(ngModel)]="name" name="name"
+             class="w-full p-3 rounded-md bg-gray-800 border border-gray-700
+             text-white
+             focus:outline-none focus:ring focus:ring-emerald-400">
+      <label for="name" class="block text-md font-medium text-gray-500">Nombre</label>
+
+    </p-floatLabel>
+  </div>
+
+  <div class="">
+    <p-floatLabel>
+      <input id="phone" type="text" pInputText [(ngModel)]="phone" name="phone"
+             class="w-full p-3 rounded-md bg-gray-800 border border-gray-700
+             text-white
+             focus:outline-none focus:ring focus:ring-emerald-400">
+      <label for="name" class="block text-md font-medium text-gray-500">Telefono</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="">
+
+    <p-calendar id="fecha" [(ngModel)]="bookingDate" name="bookingDate"
+                dateFormat="dd/mm/yy" placeholder="Selecciona una fecha"
+                [minDate]="minDate"
+                [showIcon]="true"
+                class="mt-1 w-full"></p-calendar>
+  </div>
+
+  <div class="">
+    <p-floatLabel>
+    <textarea
+      class="bg-gray-800 text-white"
+      id="float-input"
+      [autoResize]="true"
+      rows="5" cols="60"
+      pInputTextarea>
+    </textarea>
+      <label for="float-input">Summary</label>
+    </p-floatLabel>
+  </div>
+
+  <button type="submit"
+          class="w-full p-3 bg-emerald-400 rounded-md hover:bg-emerald-600
+              focus:outline-none focus:ring focus:ring-emerald-400 text-black">
+    Log in
+  </button>
+</form-->
+
+<!--<div
+  class="max-w-lg mx-auto my-auto p-4 text-white bg-gray-800 shadow-lg rounded-lg">
+  <h2 class="text-2xl font-semibold text-center mb-6">Agendar Cita</h2>
+
+  <div class="mb-7">
+    <p-floatLabel>
+      <input id="name" type="text" pInputText [(ngModel)]="name"
+             class="mt-1 block w-full p-2 border border-gray-300
+             rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+
+      <label for="name" class="block text-md font-medium text-white">Nombre</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="mb-7">
+    <p-floatLabel>
+
+      <input id="phone" type="text" pInputText [(ngModel)]="phone"
+             class="mt-1 block w-full p-2 border border-gray-300 rounded-md
+             focus:ring-indigo-500 focus:border-indigo-500" />
+
+      <label for="phone" class="block text-md font-medium text-gray-700">Teléfono</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="mb-4">
+    <label for="fecha"
+           class="block text-sm font-medium text-gray-700">Fecha de la Cita</label>
+    <p-calendar id="fecha" [(ngModel)]="bookingDate"
+                dateFormat="dd/mm/yy" placeholder="Selecciona una fecha"
+                [minDate]="minDate"
+                [showIcon]="true"
+                class="mt-1 w-full"></p-calendar>
+  </div>
+
+  <div class="mb-4">
+    <label for="message" class="block text-sm font-medium text-gray-700">Mensaje Adicional</label>
+    <textarea id="message" pInputTextarea [(ngModel)]="message" placeholder="Mensaje para el fotógrafo"
+              class="mt-1 block w-full text-black p-2 border border-gray-300
+              rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+  </div>
+
+  <button pButton type="button" label="Enviar por WhatsApp" icon="pi pi-whatsapp" (click)="sendWhatsApp()"
+          class="w-full bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition">
+  </button>
+</div>-->

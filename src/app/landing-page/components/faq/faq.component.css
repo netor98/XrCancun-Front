@@ -1,0 +1,14 @@
+::ng-deep .custom-header {
+  color: #343531;
+}
+
+
+::ng-deep .custom-body{
+  margin: 5px auto;
+  background-color: #343531 !important; /* Fuchsia background */
+}
+::ng-deep .p-accordion-content {
+  background-color: #343531 !important; /* Fuchsia background */
+  color: white !important;
+  border: 1px solid white !important;
+}

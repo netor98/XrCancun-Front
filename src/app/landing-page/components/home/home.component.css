@@ -1,0 +1,32 @@
+.hero {
+  height: 100vh; /* Full viewport height */
+  background: url('/assets/hero.webp') no-repeat center center/cover; /* Background image */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Color oscuro con transparencia para simular el brillo */
+  z-index: 1; /* Asegúrate de que esté por encima de la imagen de fondo */
+}
+
+.hero > * {
+  position: relative; /* Asegúrate de que los hijos se muestren por encima del pseudo-elemento */
+  z-index: 2; /* Asegúrate de que los hijos se muestren por encima del pseudo-elemento */
+}
+
+.hero-content {
+  text-align: left;
+  color: white;
+  max-width: 500px;
+}
+

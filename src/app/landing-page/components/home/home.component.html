@@ -1,0 +1,64 @@
+<app-nav-bar></app-nav-bar>
+
+<section class="hero md:pl-8 pl-2 text-emerald-600">
+
+  <div class="hero-content
+       transition-opacity">
+    <h1 class="text-4xl font-semibold leading-snug">
+      {{ 'title' | translate }}</h1>
+    <p class="leading-8 text-md drop-shadow-lg">
+      At <span class="font-semibold italic">XrCancún</span>,
+      {{ 'subtitle' | translate }}
+    </p>
+
+      <a href="#About" title=""
+         class="items-center text-sm mt-2
+         text-black justify-center hidden px-9 py-1
+         hover:bg-gray-300
+         transition-all duration-200 bg-white border
+         border-transparent rounded-full lg:inline-flex"
+         role="button">{{'explore' | translate}}</a>
+  </div>
+
+
+</section>
+
+
+<section  style="background-color: #1c1a1f"
+         class="text-white flex flex-col md:flex-row md:pl-8
+         justify-between py-20">
+  <!-- Text Section -->
+  <div scrollReveal
+       class="transition-opacity duration-700 pl-2
+       transform w-full md:w-2/5">
+    <h3 id="About" class="underline text-sm
+                   underline-offset-4 md:mt-3 scroll-mt-40">
+      {{ 'about.title' | translate }}
+    </h3>
+
+    <h2 class="text-2xl text-emerald-400 mt-3 font-bold">
+      {{ 'about.subtitle' | translate }}
+    </h2>
+
+    <p class="leading-1 text-justify mt-3 mr-1">
+      {{ 'about.content' | translate }}
+    </p>
+  </div>
+
+  <!-- Image Section -->
+  <div scrollReveal
+       class="w-full md:w-1/2 md:mr-5 transition-opacity
+       duration-700 transform mt-8 md:mt-0 pl-0">
+    <img [ngSrc]="image"
+         [width]="1300"
+         [height]="867"
+         alt="About Us"
+         class="rounded-2xl
+         md:border-b-8 md:border-r-8 border-emerald-700"/>
+  </div>
+</section>
+
+<gallery id="Gallery"></gallery>
+<pricing-plans></pricing-plans>
+<faq-section></faq-section>
+<app-footer/>

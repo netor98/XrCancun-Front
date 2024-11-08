@@ -1,0 +1,67 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "services": "Services",
+    "booking": "Booking"
+  },
+  "title": "¡Book Your Photography Session Today!",
+  "subtitle": "We believe every moment deserves to be immortalized. Whether you're celebrating a milestone, or simply want to preserve life's beautiful moments, we're here to turn your vision into stunning photographs.",
+  "explore": "Explore",
+  "about": {
+    "title": "About Us",
+    "subtitle": "Preserve your memories for a lifetime with our professional photography.",
+    "content": "We are a company with extensive experience in the photographic service, with the mission of capturing unpublished images of the special moments and events of our clients."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Check out our photo gallery to see examples of our ",
+    "work": "work."
+  },
+  "footer": {
+    "title": "Capture Moments",
+    "subtitle": "Creating unforgettable memories.",
+    "copy": "Preserving unforgettable moments.",
+    "contact": "Contact Us",
+    "content": "CAPTURING YOUR PRECIOUS MOMENTS WITH A TOUCH OF CREATIVITY AND PASSION."
+  },
+  "services": {
+    "weddingPhotography": "Wedding Photography",
+    "familyPortraits": "Family Portraits",
+    "eventPhotography": "Event Photography",
+    "photoEditing": "Photo Editing",
+    "photographyPackages": "Photography Packages",
+    "corporateShoots": "Corporate Shoots",
+    "bookNow": "Book Now",
+    "about": "About Us",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "faqs": "FAQs",
+    "title": "Explore Our",
+    "subtitle": "Services"
+  },
+  "Faqs": {
+    "title": "Frequently Asked",
+    "subtitle": "Questions"
+  },
+  "booking": {
+    "title": "Book Your Photography Session",
+    "subtitle": "Complete the form below to book your photography session.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "date": "Date",
+    "time": "Time",
+    "message": "Message",
+    "submit": "Send via WhatsApp"
+  },
+  "carousel": {
+    "link": "Back to website ->",
+    "message1": "Caputuring Memories",
+    "message2": "Creating Memories"
+  }
+
+
+
+}
